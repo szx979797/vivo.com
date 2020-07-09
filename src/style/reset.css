@@ -1,0 +1,46 @@
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(233, 233, 233, 0.63);
+}
+h1,h2,h3,h4,h5,h6{
+    font-size:16px;
+    font-weight: normal;
+}
+ul,ol,li{
+    list-style:none;
+}
+a,u{
+    color: #000000;
+    text-decoration: none;
+}
+b,strong{
+    font-weight: normal;
+}
+em,i{
+    font-style:normal;
+}
+img{
+    border:0;
+    display:block;
+    /*清除图片下面的大于3px的间距*/
+}
+input{
+    outline:none;
+}
+.clear_fix:after{
+    content:".";
+    clear:both;
+    display:block;
+    height:0;
+    overflow:hidden;
+    visibility: hidden;
+}
+.clear_fix{
+    zoom:1;
+}
+

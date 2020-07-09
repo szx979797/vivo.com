@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>购物车</title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/shopping.css">
+    <link rel="stylesheet" href="../style/font-index/iconfont.css">
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/require.js" data-main="../js/main.shopcar.js"></script>
+</head>
+
+<body>
+    <div id="nav">
+        <div class="nav-top-wrap">
+            <div class="nav-top">
+                <ul class="nav-top-left">
+                    <li>
+                        <a href="#">
+                            品牌
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Funtouch OS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            体验店
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            企业业务
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            社区
+                        </a>
+                    </li>
+
+                </ul>
+                <div class="nav-top-right">
+                    <a class="vp-user-shopcart" href="http://localhost/vivo.com/src/html/shopping.html">
+                        购物车
+                    </a>
+                    <div class=".vp-user-login-box">
+                        <a href="http://localhost/vivo.com/src/html/login.html">登录</a>
+                        <i>|</i>
+                        <a href="http://localhost/vivo.com/src/html/passport.html">注册</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="head-show">
+        <div class="show-item">
+            <div class="logobox">
+                <i class="iconfont icon-vivo"></i>
+            </div>
+            <div class="nav-show">
+                <ul>
+                    <p class="move-down-big">
+                        <span class="move-down">
+                        </span>
+                        <li class="change one"><a href="">NEX系列</a></li>
+                        <li class="change same"><a href="">X系列</a></li>
+                        <li class="change same"><a href="">S系列</a></li>
+                        <li class="change same"><a href="">Y系列</a></li>
+                        <li class="change same"><a href="">Z系列</a></li>
+                        <li class="change same"><a href="">U系列</a></li>
+                        <li class="change IQOO"><a href="">IQOO手机</a></li>
+                        <li class="change ear"><a href="">真无线耳机</a></li>
+                    </p>
+                    <li class="shop"><a href="">商城</a></li>
+                    <li class="ser"><a href="">服务</a></li>
+                </ul>
+                <div class="nav-ser">
+                    <i class="iconfont icon-fangdajing"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="content">
+        <div class="content-title">
+            <h2>我的购物车</h2>
+            <a href="#" class="myshop">
+                继续购物
+                <i class="iconfont icon-dibudaohanglan-1"></i>
+            </a>
+        </div>
+
+
+        <table class="table-shop">
+            <tr class="title-1">
+                <th>
+                    <input type="checkbox" class="checkboxall">
+                    <span>全选</span>
+                </th>
+                <th>商品名称</th>
+                <th>价格（元）</th>
+                <th>数量</th>
+                <th>优惠</th>
+                <th>赠送积分</th>
+                <th>小计（元）</th>
+                <th>操作</th>
+            </tr>
+            <!-- <tr class="trlist">
+                <td class="first-child">
+                    <input type="checkbox">
+                    <img src="../img/img-shopping/shop-1.png" alt="">
+                </td>
+                <td class="second-child">
+                    <a href="#">
+                        vivo 缤纷耳机 红色
+                    </a>
+                    <span>颜色：红色</span>
+                </td>
+                <td>49.00</td>
+                <td class="fouth-child">
+                    <div class="number">
+                        <a href="javascript:;" class="delnum">-</a>
+                        <span class="num">1</span>
+                        <a href="javascript:;" class="addnum">+</a>
+                    </div>
+                </td>
+                <td>0.00</td>
+                <td>49</td>
+                <td>49.00</td>
+                <td class="last-child">
+                    <div class="add">加入到收藏夹</div>
+                    <div class="del">删除</div>
+                </td>
+            </tr> -->
+        </table>
+
+        <div class="table-bottom">
+            <div class="btn-bot">
+                <input type="checkbox" class="checkboxall">
+                <span>全选</span>
+            </div>
+            <div class="text-bot">
+                <span class="delsome">删除选中的商品</span>
+                <span class="addsome">移入收藏夹</span>
+            </div>
+            <div class="priceall">
+                <span>已选商品 1件，合计（不含运费）：
+                    <i>¥129.00</i>
+                </span>
+                <span>
+                    ( 商品总价： ¥ 129.00 优惠： ¥ 0.00 )
+                </span>
+            </div>
+            <div class="search-bot">
+                去结算
+            </div>
+        </div>
+
+
+
+        <div class="elp">
+            <div class="title2">
+                猜你喜欢
+            </div>
+            <div class="nice-more-list">
+                <a href="">
+                    <div class="nice-more-lit">
+                        <img src="../img/img-index/more1.png" alt="">
+                        <p class="name">
+                            vivo 缤纷耳机
+                        </p>
+                        <p class="feature">专业调音 三频均衡</p>
+                        <p class="price"><dfn>￥</dfn>49.00</p>
+
+                    </div>
+                </a>
+                <a href="">
+                    <div class="nice-more-lit">
+                        <img src="../img/img-index/more2.png" alt="">
+                        <p class="name">
+                            iQOO 影音耳机
+                        </p>
+                        <p class="feature">K歌级麦克风</p>
+                        <p class="price"><dfn>￥</dfn>129.00</p>
+
+                    </div>
+                </a>
+                <a href="">
+                    <div class="nice-more-lit">
+                        <img src="../img/img-index/more3.png" alt="">
+                        <p class="name">
+                            vivo X50 硅胶保护壳
+                        </p>
+                        <p class="feature">手感舒适｜简约设计</p>
+                        <p class="price"><dfn>￥</dfn>59.00</p>
+
+                    </div>
+                </a>
+                <a href="">
+                    <div class="nice-more-lit">
+                        <img src="../img/img-index/more4.png" alt="">
+                        <p class="name">
+                            iQOO 3 砂岩手机保护壳
+                        </p>
+                        <p class="feature">官方品质｜砂岩手感</p>
+                        <p class="price"><dfn>￥</dfn>59.00</p>
+
+                    </div>
+                </a>
+                <a href="">
+                    <div class="nice-more-lit">
+                        <img src="../img/img-index/more5.png" alt="">
+                        <p class="name">
+                            iQOO 闪电游戏手柄
+                        </p>
+                        <p class="feature">即连即玩｜支持海量游戏</p>
+                        <p class="price"><dfn>￥</dfn>199.00</p>
+
+                    </div>
+                </a>
+                <a href="">
+                    <div class="nice-more-lit">
+                        <img src="../img/img-index/more6.png" alt="">
+                        <p class="name">
+                            闪充手游数据线
+                        </p>
+                        <p class="feature">官方品质｜手游专属设计</p>
+                        <p class="price"><dfn>￥</dfn>59.00</p>
+
+                    </div>
+                </a>
+                <a href="">
+                    <div class="nice-more-lit">
+                        <img src="../img/img-index/more7.png" alt="">
+                        <p class="name">
+                            vivo TWS Neo 真无线耳机
+                        </p>
+                        <p class="feature">高清音质|游戏低延迟</p>
+                        <p class="price"><dfn>￥</dfn>499.00</p>
+
+                    </div>
+                </a>
+                <a href="">
+                    <div class="nice-more-lit">
+                        <img src="../img/img-index/more8.png" alt="">
+                        <p class="name">
+                            vivo 44W闪充充电器
+                        </p>
+                        <p class="feature">六重保护系统</p>
+                        <p class="price"><dfn>￥</dfn>119.00</p>
+
+                    </div>
+                </a>
+                <a href="">
+                    <div class="nice-more-lit">
+                        <img src="../img/img-index/more1.png" alt="">
+                        <p class="name">
+                            vivo 缤纷耳机
+                        </p>
+                        <p class="feature">专业调音 三频均衡</p>
+                        <p class="price"><dfn>￥</dfn>49.00</p>
+
+                    </div>
+                </a>
+                <a href="">
+                    <div class="nice-more-lit">
+                        <img src="../img/img-index/more2.png" alt="">
+                        <p class="name">
+                            iQOO 影音耳机
+                        </p>
+                        <p class="feature">K歌级麦克风</p>
+                        <p class="price"><dfn>￥</dfn>129.00</p>
+
+                    </div>
+                </a>
+                <a href="">
+                    <div class="nice-more-lit">
+                        <img src="../img/img-index/more3.png" alt="">
+                        <p class="name">
+                            vivo X50 硅胶保护壳
+                        </p>
+                        <p class="feature">手感舒适｜简约设计</p>
+                        <p class="price"><dfn>￥</dfn>59.00</p>
+
+                    </div>
+                </a>
+                <a href="">
+                    <div class="nice-more-lit">
+                        <img src="../img/img-index/more4.png" alt="">
+                        <p class="name">
+                            iQOO 3 砂岩手机保护壳
+                        </p>
+                        <p class="feature">官方品质｜砂岩手感</p>
+                        <p class="price"><dfn>￥</dfn>59.00</p>
+
+                    </div>
+                </a>
+                <a href="">
+                    <div class="nice-more-lit">
+                        <img src="../img/img-index/more5.png" alt="">
+                        <p class="name">
+                            iQOO 闪电游戏手柄
+                        </p>
+                        <p class="feature">即连即玩｜支持海量游戏</p>
+                        <p class="price"><dfn>￥</dfn>199.00</p>
+
+                    </div>
+                </a>
+                <a href="">
+                    <div class="nice-more-lit">
+                        <img src="../img/img-index/more6.png" alt="">
+                        <p class="name">
+                            闪充手游数据线
+                        </p>
+                        <p class="feature">官方品质｜手游专属设计</p>
+                        <p class="price"><dfn>￥</dfn>59.00</p>
+
+                    </div>
+                </a>
+                <a href="">
+                    <div class="nice-more-lit">
+                        <img src="../img/img-index/more7.png" alt="">
+                        <p class="name">
+                            vivo TWS Neo 真无线耳机
+                        </p>
+                        <p class="feature">高清音质|游戏低延迟</p>
+                        <p class="price"><dfn>￥</dfn>499.00</p>
+
+                    </div>
+                </a>
+                <a href="">
+                    <div class="nice-more-lit">
+                        <img src="../img/img-index/more8.png" alt="">
+                        <p class="name">
+                            vivo 44W闪充充电器
+                        </p>
+                        <p class="feature">六重保护系统</p>
+                        <p class="price"><dfn>￥</dfn>119.00</p>
+
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="shop-foot">
+            <div class="in">
+                <ul>
+                    <li><a href=""><i class="iconfont icon-zhengpinbaozhang2"></i>官方正品</a></li>
+                    <li><a href=""><i class="iconfont icon-lujing"></i>顺丰极速达</a></li>
+                    <li><a href=""><i class="iconfont icon-xin"></i>全国联保</a></li>
+                    <li><a href=""><i class="iconfont icon-serviceshandiantuikuan"></i>镭雕定制</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="friend-link">
+            <div class="link-list">
+                <ul>
+                    <li>
+                        <p><a href="">热门链接</a></p>
+                        <a href="">X50 Pro</a>
+                        <a href="">NEX 3S</a>
+                        <a href="">Z6</a>
+                        <a href="">vivo摄影</a>
+                        <a href="">查找手机</a>
+                        <a href="">常见问题</a>
+                    </li>
+                    <li>
+                        <p><a href="">在线购买</a></p>
+                        <a href="">官方商城</a>
+                        <a href="">选购手机</a>
+                        <a href="">选购配件</a>
+                        <a href="">企业服务</a>
+                        <a href="">以旧换新</a>
+                        <a href="">保障服务</a>
+                    </li>
+                    <li>
+                        <p><a href="">服务支持</a></p>
+                        <a href="">服务首页</a>
+                        <a href="">服务网点查询</a>
+                        <a href="">真伪查询</a>
+                        <a href="">预约维修</a>
+                        <a href="">维修配件价格</a>
+                        <a href="">服务政策</a>
+                        <a href="">安全公告</a>
+                    </li>
+                    <li>
+                        <p><a href="">vivo社区</a></p>
+                        <a href="">社区首页</a>
+                        <a href="">摄影专区</a>
+                        <a href="">微博</a>
+                        <a href="">贴吧</a>
+                        <a href="">兴趣部落</a>
+                    </li>
+                    <li>
+                        <p><a href="">vivo社区</a></p>
+                        <a href="">vivo简介</a>
+                        <a href="">工作机会</a>
+                        <a href="">新闻资讯</a>
+                        <a href="">采购平台</a>
+                        <a href="">供应商协同平台</a>
+                        <a href="">开放平台</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="other-link">
+                <a href="" class="online">
+                    <i class="iconfont icon-dibudaohanglan-"></i> 在线客服
+                </a>
+                <div class="phonebox">
+                    <p>400-678-9688</p>
+                    <span>全国客户服务热线 7*24小时</span>
+                </div>
+                <div class="phonebox">
+                    <p>400-679-9688</p>
+                    <span>NEX 专属服务热线 7*24小时</span>
+                </div>
+                <span class="vivo">
+                    关注vivo
+                </span>
+                <ul class="icon">
+                    <li><a href=""><i class="iconfont icon-tubiaozhizuo-"></i></a></li>
+                    <li><a href=""><i class="iconfont icon-gongzhonghao"></i></a></li>
+                    <li><a href=""><i class="iconfont icon-zhifubao"></i></a></li>
+                    <li><a href=""><i class="iconfont icon-xiaochengxu"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <footer>
+            <p class="foot">
+                Copyright ©2011-2020
+                <span class="con-name">
+                    广东天宸网络科技有限公司
+                </span> 版权所有 保留一切权利 |
+                <span class="links">
+                    <a href="">隐私政策</a>|
+                    <a href="">法律声明</a>|
+                    <a href="">营业执照</a>|
+                    <a href="">粤B2-20080267 | 粤ICP备14052990号</a>|
+                    <a href="" class="guohui"> <img src="../img/img-index/guohui.png" alt=""> 粤公网安备 44190002004246号</a>|
+                    <a href="" class="iconfont icon-diqiu">Select Location</a>
+                </span>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

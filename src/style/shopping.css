@@ -1,0 +1,631 @@
+@charset "utf-8";
+body {
+  font-family: Microsoft YaHei;
+}
+#nav {
+  min-width: 1200px;
+  background-color: silver;
+}
+#nav .nav-top-wrap {
+  background-color: #333;
+  padding: 0 60px;
+}
+#nav .nav-top-wrap .nav-top {
+  height: 32px;
+  position: relative;
+}
+#nav .nav-top-wrap .nav-top li {
+  float: left;
+  padding-right: 42px;
+}
+#nav .nav-top-wrap .nav-top li > a {
+  display: inline-block;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  font-size: 12px;
+  color: #ccc;
+  font-weight: 400;
+  line-height: 32px;
+}
+#nav .nav-top-wrap .nav-top li > a:hover {
+  color: #848484;
+  font-weight: 400;
+}
+#nav .nav-top-wrap .nav-top .nav-top-right {
+  float: right;
+  font-size: 12px;
+  line-height: 32px;
+}
+#nav .nav-top-wrap .nav-top .nav-top-right > a {
+  display: inline-block;
+  font-size: 12px;
+  color: #ccc;
+  font-weight: 400;
+  line-height: 32px;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+  margin-right: 24px;
+}
+#nav .nav-top-wrap .nav-top .nav-top-right > a:hover {
+  color: #848484;
+}
+#nav .nav-top-wrap .nav-top .nav-top-right > div {
+  display: inline-block;
+}
+#nav .nav-top-wrap .nav-top .nav-top-right > div > a:first-of-type {
+  display: inline-block;
+  font-size: 12px;
+  color: #ccc;
+  font-weight: 400;
+  line-height: 32px;
+  cursor: pointer;
+  margin-right: 18px;
+}
+#nav .nav-top-wrap .nav-top .nav-top-right > div > a:first-of-type:hover {
+  color: #848484;
+}
+#nav .nav-top-wrap .nav-top .nav-top-right > div > a:last-of-type {
+  display: inline-block;
+  font-size: 12px;
+  color: #ccc;
+  font-weight: 400;
+  line-height: 32px;
+  cursor: pointer;
+  margin-left: 18px;
+}
+#nav .nav-top-wrap .nav-top .nav-top-right > div > a:last-of-type:hover {
+  color: #848484;
+}
+#nav .nav-top-wrap .nav-top .nav-top-right > div > i {
+  font-size: 12px;
+  color: #ccc;
+  font-weight: 400;
+  line-height: 32px;
+  vertical-align: top;
+}
+.head-show {
+  background-color: rgba(233, 233, 233, 0.63);
+  color: rgba(255, 255, 255, 0.63);
+  width: 100%;
+  height: 68px;
+}
+.head-show .show-item {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+.head-show .show-item .logobox {
+  float: left;
+  width: 106px;
+  height: 28px;
+  padding: 16px 0 23px;
+  color: black;
+  line-height: 37px;
+  transition: color 1s;
+  margin-left: -2px;
+  cursor: pointer;
+}
+.head-show .show-item .logobox .iconfont:before {
+  font-size: 113px;
+  margin-right: -6px;
+}
+.head-show .show-item .logobox:hover {
+  color: #008cd6;
+}
+.head-show .show-item .nav-show {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 906px;
+  height: 68px;
+  margin-left: 86px;
+  float: left;
+}
+.head-show .show-item .nav-show p {
+  float: left;
+}
+.head-show .show-item .nav-show p .move-down {
+  position: absolute;
+}
+.head-show .show-item .nav-show ul li {
+  float: left;
+}
+.head-show .show-item .nav-show ul .change {
+  transition: color 0.3s ease-in-out;
+  white-space: nowrap;
+  font-size: 18px;
+  width: 3.5em;
+  display: table-cell;
+  text-align: center;
+  cursor: pointer;
+  line-height: 68px;
+  position: relative;
+}
+.head-show .show-item .nav-show ul .change > a {
+  color: #000000;
+  transition: color 0.2s linear;
+}
+.head-show .show-item .nav-show ul .change:hover a {
+  color: #008cd6;
+}
+.head-show .show-item .nav-show ul .same {
+  width: 85px;
+}
+.head-show .show-item .nav-show ul .one {
+  width: 98px;
+}
+.head-show .show-item .nav-show ul .IQOO {
+  width: 113px;
+}
+.head-show .show-item .nav-show ul .ear {
+  width: 122px;
+}
+.head-show .show-item .nav-show ul .shop {
+  transition: color 0.3s ease-in-out;
+  white-space: nowrap;
+  font-size: 18px;
+  width: 3.5em;
+  display: table-cell;
+  text-align: center;
+  cursor: pointer;
+  line-height: 68px;
+  width: 74px;
+}
+.head-show .show-item .nav-show ul .shop a {
+  color: #848484;
+}
+.head-show .show-item .nav-show ul .ser {
+  transition: color 0.3s ease-in-out;
+  white-space: nowrap;
+  font-size: 18px;
+  width: 3.5em;
+  display: table-cell;
+  text-align: center;
+  cursor: pointer;
+  line-height: 68px;
+  width: 74px;
+}
+.head-show .show-item .nav-show ul .ser a {
+  transition: color 0.2s linear;
+  color: #000000;
+}
+.head-show .show-item .nav-show ul .ser:hover a {
+  color: #008cd6;
+}
+.head-show .show-item .nav-show .nav-ser {
+  position: absolute;
+  right: 75px;
+}
+.head-show .show-item .nav-show .nav-ser .iconfont {
+  line-height: 68px;
+  font-size: 19px;
+  color: #999;
+  cursor: pointer;
+}
+#content {
+  width: 1200px;
+  margin: 0 auto;
+}
+#content .content-title {
+  position: relative;
+  height: 66px;
+  margin-bottom: 19px;
+  line-height: 66px;
+  color: #333;
+  font-weight: 400;
+  background-color: #fff;
+  text-align: center;
+}
+#content .content-title > h2 {
+  font-size: 20px;
+}
+#content .content-title > a {
+  position: absolute;
+  right: 35px;
+  top: 0;
+  float: right;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+}
+#content .content-title > a:hover {
+  color: #ff3029;
+}
+#content > .table-shop {
+  background-color: #fff;
+  border-collapse: collapse;
+  width: 1200px;
+}
+#content > .table-shop .title-1 {
+  height: 64px;
+  font-size: 14px;
+  color: #333;
+}
+#content > .table-shop .title-1 > th {
+  font-weight: normal;
+}
+#content > .table-shop .title-1 > th:first-child {
+  text-align: left;
+  font-weight: normal;
+  padding-left: 26px;
+}
+#content > .table-shop .title-1 > th:first-child > input {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 5px;
+}
+#content > .table-shop .trlist {
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  height: 152px;
+}
+#content > .table-shop .trlist > .first-child {
+  text-align: left;
+  padding-left: 26px;
+}
+#content > .table-shop .trlist > .first-child > input {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  top: 56px;
+}
+#content > .table-shop .trlist > .first-child > img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 34px;
+  vertical-align: middle;
+}
+#content > .table-shop .trlist > .second-child {
+  text-align: left;
+}
+#content > .table-shop .trlist > .second-child > a {
+  color: #333333;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 25px;
+}
+#content > .table-shop .trlist > .second-child > a:hover {
+  color: #ff3029;
+}
+#content > .table-shop .trlist > .second-child > span {
+  color: #333333;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 25px;
+}
+#content > .table-shop .trlist .fouth-child {
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 14px;
+}
+#content > .table-shop .trlist .fouth-child > .number {
+  margin: 0 auto;
+  width: 100px;
+  height: 32px;
+  border: 1px solid #ccc;
+  line-height: 30px;
+}
+#content > .table-shop .trlist .fouth-child > .number > a {
+  display: block;
+  height: 32px;
+  width: 31px;
+  float: left;
+}
+#content > .table-shop .trlist .fouth-child > .number > span {
+  display: block;
+  height: 32px;
+  width: 36px;
+  float: left;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+#content > .table-shop .trlist td:nth-child(7) {
+  color: #ff3029;
+}
+#content > .table-shop .trlist .last-child > div {
+  cursor: pointer;
+}
+#content .table-bottom {
+  padding: 0 26px;
+  height: 1200px;
+  height: 98px;
+  background-color: #fff;
+  margin-top: 20px;
+  overflow: hidden;
+  position: relative;
+}
+#content .table-bottom div {
+  float: left;
+}
+#content .table-bottom > .btn-bot {
+  width: 62px;
+  height: 98px;
+  margin-right: 30px;
+  text-align: center;
+  margin-top: 39px;
+}
+#content .table-bottom > .btn-bot > input {
+  width: 20px;
+  height: 20px;
+}
+#content .table-bottom > .btn-bot > span {
+  display: inline-block;
+  height: 100%;
+  position: relative;
+  top: -4px;
+}
+#content .table-bottom > .text-bot {
+  height: 98px;
+}
+#content .table-bottom > .text-bot > span {
+  text-align: center;
+  line-height: 98px;
+  display: inline-block;
+  margin-right: 30px ;
+  height: 100%;
+}
+#content .table-bottom > .priceall {
+  width: 558px;
+  margin-top: 22px;
+}
+#content .table-bottom > .priceall > span {
+  display: block;
+  float: right;
+  font-size: 14px;
+}
+#content .table-bottom > .priceall > span > i {
+  color: #f51200;
+  font-size: 33px;
+}
+#content .table-bottom > .priceall > span:last-child {
+  color: #808080;
+}
+#content .table-bottom > .search-bot {
+  width: 170px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 23px;
+  margin-right: 27px;
+  margin-top: 26px;
+  margin-left: 20px;
+  background-color: #ff0c53;
+}
+#content .elp {
+  width: 1200px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+#content .elp .title2 {
+  font-size: 20px;
+  color: #333;
+  margin: 37px 0 25px;
+}
+#content .elp .nice-more-list {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: wrap;
+}
+#content .elp .nice-more-list a {
+  position: relative;
+  transition: top 0.2s linear, box-shadow 0.2s linear;
+  transition-delay: 0.1s;
+  top: 0;
+  margin-bottom: 10px;
+}
+#content .elp .nice-more-list a .nice-more-lit {
+  width: 293px;
+  height: 380px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+  text-align: center;
+  background-color: #fff;
+}
+#content .elp .nice-more-list a .nice-more-lit img {
+  margin: 43px auto 0;
+  width: 172px;
+  height: 172px;
+}
+#content .elp .nice-more-list a .nice-more-lit .name {
+  padding-top: 16px;
+  color: #333;
+  font-size: 16px;
+  line-height: 30px;
+}
+#content .elp .nice-more-list a .nice-more-lit .feature {
+  padding: 2px 15px 40px;
+  height: 24px;
+  color: #333;
+  font-size: 12px;
+  line-height: 24px;
+}
+#content .elp .nice-more-list a .nice-more-lit .price {
+  color: #f51919;
+  font-size: 16px;
+  line-height: 1;
+}
+#content .elp .nice-more-list a .nice-more-lit .price dfn {
+  margin-right: 2px;
+  color: #f51919;
+  font-size: 14px;
+}
+#content .elp .nice-more-list a:hover {
+  top: -4px;
+  box-shadow: 1px 6px 13px -1px #888888;
+}
+#footer {
+  background-color: #fff;
+}
+#footer .shop-foot {
+  width: 100%;
+  padding: 30px 0 70px;
+  background-color: #fff;
+}
+#footer .shop-foot .in {
+  width: 1200px;
+  margin: 0 auto;
+}
+#footer .shop-foot .in ul {
+  background-color: #fff;
+  padding: 30px 0;
+  height: 85px;
+  border-bottom: 1px #ccc solid;
+}
+#footer .shop-foot .in ul li {
+  text-align: center;
+  float: left;
+  width: 300px;
+  height: 28px;
+  line-height: 28px;
+  color: #333;
+  font-size: 18px;
+  cursor: default;
+}
+#footer .shop-foot .in ul li .iconfont {
+  margin-right: 2px;
+  font-size: 28px;
+  vertical-align: -3px;
+}
+#footer .friend-link {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  background-color: #fff;
+}
+#footer .friend-link .link-list {
+  display: inline-table;
+  vertical-align: top;
+  width: 80%;
+  margin-left: 20px;
+}
+#footer .friend-link .link-list ul li {
+  width: 180px;
+  height: 249px;
+  float: left;
+}
+#footer .friend-link .link-list ul li p {
+  width: 180px;
+  height: 17px;
+  font-size: 16px;
+  line-height: 17px;
+  padding-bottom: 40px;
+}
+#footer .friend-link .link-list ul li > a {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 18px;
+  color: #666;
+  transition: color 0.2s linear;
+}
+#footer .friend-link .link-list ul li > a:hover {
+  color: blue;
+}
+#footer .friend-link .other-link {
+  width: 180px;
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+#footer .friend-link .other-link .online {
+  transition: color 0.5s linear;
+  display: inline-block;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 22px;
+}
+#footer .friend-link .other-link .online .iconfont {
+  font-size: 25px;
+}
+#footer .friend-link .other-link .online:hover {
+  color: blue;
+}
+#footer .friend-link .phonebox {
+  margin-bottom: 24px;
+}
+#footer .friend-link .phonebox p {
+  color: #415fff;
+  font-size: 24px;
+}
+#footer .friend-link .phonebox span {
+  padding-top: 10px;
+  color: #333;
+  font-size: 14px;
+}
+#footer .friend-link .phonebox:nth-child(2) {
+  margin-bottom: 30px;
+}
+#footer .friend-link .vivo {
+  font-size: 14px;
+  color: #333;
+  line-height: 1;
+  margin-bottom: 13px;
+}
+#footer .friend-link .icon li {
+  float: left;
+  margin-right: 20px;
+  position: relative;
+  cursor: pointer;
+  padding-top: 5px;
+}
+#footer .friend-link .icon li .iconfont {
+  width: 20px;
+  height: 20px;
+  color: #333;
+  font-family: vp-foot-iconfont;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+#footer .friend-link .icon li .iconfont:hover {
+  color: blue;
+}
+#footer footer {
+  margin: 74px auto 0;
+  padding: 30px 0;
+  white-space: normal;
+  border-top: 1px solid silver;
+  width: 1200px;
+  background-color: #fff;
+}
+#footer footer .foot {
+  overflow: hidden;
+  margin-top: -0.25em;
+  color: #666;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}
+#footer footer .foot .links a {
+  color: #666;
+  font-size: 12px;
+  line-height: 1.5;
+}
+#footer footer .foot .links a img {
+  display: inline-block;
+  width: 15px;
+  height: 16px;
+}
+#footer footer .foot .icon-diqiu {
+  margin-left: 76px;
+  transition: color 0.5s linear;
+}
+#footer footer .foot .icon-diqiu:hover {
+  color: blue;
+}
+#footer footer .foot .guohui {
+  margin-right: 20px;
+}

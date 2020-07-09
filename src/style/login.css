@@ -1,0 +1,315 @@
+@charset "utf-8";
+body,
+html {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  font-size: 12px;
+  background-color: #f7f7f7;
+}
+.bigbanner {
+  background-color: #b9d3f8;
+  width: 100%;
+}
+.bigbanner .banner {
+  height: 780px;
+  width: 1200px;
+  position: relative;
+  margin: 0 auto;
+}
+.bigbanner .banner .logobox {
+  position: absolute;
+  top: 0;
+  left: 243px;
+  height: 52px;
+  width: 145px;
+}
+.bigbanner .banner .logobox .logo {
+  display: block;
+  height: 52px;
+  width: 145px;
+  background-image: url(https://accountstatic.vivo.com.cn/accountstatic.vivo.com.cn/static/img/logo-1.e4aed09.png);
+  background-size: 100% 100%;
+}
+.bigbanner .banner .outbox {
+  position: absolute;
+  top: 74px;
+  right: 0;
+  width: 420px;
+  background-color: #fff;
+}
+.bigbanner .banner .outbox .innerbox {
+  padding: 30px 30px 20px;
+  min-height: 513px;
+}
+.bigbanner .banner .outbox .innerbox .logobox2 {
+  width: 160px;
+  height: 42px;
+  margin: auto;
+  cursor: pointer;
+}
+.bigbanner .banner .outbox .innerbox .logobox2 img {
+  width: 100%;
+  height: 100%;
+}
+.bigbanner .banner .outbox .innerbox .title {
+  margin-top: 17px;
+  font-family: HYQiHei-FZS;
+  font-size: 19px;
+  font-weight: 400;
+  font-stretch: normal;
+  letter-spacing: 0;
+  color: #000;
+  text-align: center;
+}
+.bigbanner .banner .outbox .innerbox .change {
+  text-align: right;
+  font-size: 14px;
+  color: #456fff;
+  margin-top: 24px;
+  cursor: pointer;
+}
+.bigbanner .banner .outbox .innerbox .phonebox {
+  margin-top: 17px;
+  height: 46px;
+  border: 1px solid #dedfe0;
+  cursor: pointer;
+}
+.bigbanner .banner .outbox .innerbox .phonebox .phonecode {
+  width: 94px;
+  height: 46px;
+  padding-left: 12px;
+  line-height: 48px;
+  font-size: 16px;
+  color: #000;
+  float: left;
+  position: relative;
+}
+.bigbanner .banner .outbox .innerbox .phonebox .phonecode .showcode {
+  position: relative;
+}
+.bigbanner .banner .outbox .innerbox .phonebox .phonecode .showcode .after {
+  width: 14px;
+  height: 9px;
+  position: absolute;
+  top: 21.3px;
+  right: 31px;
+  background: url(https://accountstatic.vivo.com.cn/accountstatic.vivo.com.cn/static/img/arrow-down.42027c9.png) no-repeat;
+  background-size: 100% 100%;
+}
+.bigbanner .banner .outbox .innerbox .phonebox .phonecode .showcode .input {
+  top: 0px;
+  right: -252px;
+  position: absolute;
+  width: 264px;
+  font-size: 16px;
+  height: 46px;
+  line-height: 46px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: transparent !important;
+  border: none;
+  letter-spacing: 1px !important;
+  margin: 0;
+}
+.bigbanner .banner .outbox .innerbox .phonebox .phonecode .showcode .input::-webkit-input-placeholder,
+.bigbanner .banner .outbox .innerbox .phonebox .phonecode .showcode textarea::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #aaa;
+}
+.bigbanner .banner .outbox .innerbox .codebox {
+  margin-top: 15px;
+  height: 46px;
+  line-height: 46px;
+  padding-left: 12px;
+  border: 1px solid #dedfe0;
+}
+.bigbanner .banner .outbox .innerbox .codebox .input {
+  float: left;
+  width: 226px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background-color: transparent !important;
+  border: none;
+  letter-spacing: 1px !important;
+  color: inherit;
+}
+.bigbanner .banner .outbox .innerbox .codebox .input::-webkit-input-placeholder,
+.bigbanner .banner .outbox .innerbox .codebox textarea::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #aaa;
+}
+.bigbanner .banner .outbox .innerbox .codebox .shu {
+  float: left;
+  border-left: 1px solid #ebdcdc;
+  height: 33px;
+  position: relative;
+  top: 7px;
+}
+.bigbanner .banner .outbox .innerbox .codebox .getcode {
+  position: relative;
+  float: right;
+  width: 103px;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+  font-size: 15px;
+  top: 1px;
+  right: 0.5px;
+}
+.bigbanner .banner .outbox .innerbox .codebox .getcode span {
+  color: #456fff;
+  cursor: pointer;
+  display: inline-block;
+  height: 100%;
+}
+.bigbanner .banner .outbox .innerbox .checkbox {
+  width: 360px;
+  height: 22px;
+  margin-top: 20px;
+  font-size: 14px;
+}
+.bigbanner .banner .outbox .innerbox .checkbox .lo {
+  color: #666;
+  float: right;
+}
+.bigbanner .banner .outbox .innerbox .checkbox .lo input {
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  float: left;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.bigbanner .banner .outbox .innerbox .inbtn {
+  display: block;
+  width: 360px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 17px;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 19px;
+  cursor: pointer;
+  background-color: #428aff;
+}
+.bigbanner .banner .outbox .innerbox .inbtn:hover {
+  background-color: #4566ff;
+}
+.bigbanner .banner .outbox .innerbox .regibtn {
+  width: 358px;
+  height: 46px;
+  line-height: 48px;
+  border: 1px solid #456fff;
+  color: #456fff;
+  font-size: 17px;
+  text-align: center;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.bigbanner .banner .outbox .innerbox .regibtn:hover {
+  background-color: #d4dffa;
+}
+.bigbanner .banner .outbox .innerbox .hit3 {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #999;
+  line-height: 1.6;
+}
+.bigbanner .banner .outbox .innerbox .fogect {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-top: 21px;
+  cursor: pointer;
+}
+.bigbanner .banner .outbox .innerbox .fogect:hover {
+  color: #4566ff;
+}
+.bigbanner .banner .outbox .innerbox .other {
+  margin-top: 32px;
+  color: #999;
+  font-size: 13px;
+  text-align: center;
+}
+.bigbanner .banner .outbox .innerbox .other .o-title {
+  position: relative;
+}
+.bigbanner .banner .outbox .innerbox .other .o-title .span1 {
+  width: 130px;
+  height: 1px;
+  background-color: #ccc;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.bigbanner .banner .outbox .innerbox .other .o-title .span2 {
+  width: 130px;
+  height: 1px;
+  background-color: #ccc;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.bigbanner .banner .outbox .innerbox .other .icon-box {
+  text-align: center;
+  margin-top: 15px;
+}
+.bigbanner .banner .outbox .innerbox .other .icon-box .icon-item:nth-child(1) {
+  margin-left: 0;
+}
+.bigbanner .banner .outbox .innerbox .other .icon-box .iconfont:before {
+  font-size: 26px;
+}
+.bigbanner .banner .outbox .innerbox .other .icon-box .icon-item {
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  margin-left: 18px;
+  color: #7f98ff;
+  cursor: pointer;
+}
+.bigbanner .banner .outbox .innerbox .other .icon-box .icon-item:hover {
+  color: #3670ff;
+}
+.foot {
+  margin-top: 135px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 11px;
+  color: #9d9d9d;
+}
+.foot .to-servise {
+  display: inline-block;
+  text-decoration: none;
+  color: #666;
+  width: 105px;
+  background: url(../img/img-login/msg.png) no-repeat;
+}
+.foot .to-servise:hover {
+  color: #456fff;
+  background: url(../img/img-login/msg-hover.png) no-repeat;
+}
+.foot .right-servise {
+  color: #666;
+}
+.foot .right-servise > img {
+  display: inline-block;
+  width: 12px;
+  height: 16px;
+  vertical-align: text-bottom;
+  margin-right: 10px;
+  border: 0;
+}
+.foot .copyright {
+  padding: 10px 0;
+  font-size: 10px;
+  box-sizing: border-box;
+}
